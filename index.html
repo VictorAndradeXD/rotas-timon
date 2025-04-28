@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Rotas com OSM</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <h1>Planejador de Rotas</h1>
+            <div class="address-input">
+                <input type="text" id="addressInput" placeholder="Digite um endereço">
+                <button id="addAddress">Adicionar</button>
+            </div>
+            <div class="address-list" id="addressList"></div>
+            <div class="route-info" id="routeInfo"></div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
